@@ -28,7 +28,7 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid navy;
+  /* outline: 2px solid navy; */
   width: 1200px;
 }
 .header-container {
@@ -121,6 +121,7 @@ img {
   padding-bottom: 32px;
   display: flex;
   align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-nav-link:hover,
 .header-nav-link:focus,
@@ -313,6 +314,8 @@ img {
   color: var(--main-text-color);
   border-radius: 50%;
   background-color: var(--white-link-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link-svg {
   fill: currentColor;
@@ -331,6 +334,7 @@ img {
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .our-partners-item {
   margin-top: 30px;
@@ -339,6 +343,7 @@ img {
 }
 .our-partners-icon {
   fill: var(--main-text-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-partners-block:hover,
@@ -397,6 +402,7 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-adress-item:not(:last-child) {
   margin-bottom: 9px;
@@ -425,6 +431,8 @@ img {
   cursor: pointer;
   border-radius: 4px;
   border-color: transparent;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-item:not(:last-child) {
@@ -465,6 +473,7 @@ img {
 .our-projects-link {
   display: flex;
   flex-direction: column;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .our-projects-link:hover,
 .our-projects-link:focus {
