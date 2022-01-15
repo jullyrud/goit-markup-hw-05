@@ -514,6 +514,7 @@ img {
   color: var(--white-link-color);
   background: rgba(33, 150, 243, 0.9);
   padding: 63px 24px;
+  overflow: auto;
 }
 .our-projects-item:hover .our-projects-img-txt {
   transform: translateY(0);
@@ -567,4 +568,49 @@ img {
 
 .our-projects-tittle:hover {
   color: var(--accent-color);
+}
+/* ------------------------backdrop------- */
+.backdrop {
+  position: fixed;
+  top: 0;
+
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms, visibility 250ms;
+}
+.modal {
+  width: 528px;
+  min-height: 581px;
+  background-color: var(--white-link-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms;
+}
+.backdrop.is-hidden .modal {
+  transform: scale(0.5);
+}
+.modal-close {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: var(--white-link-color);
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-image: url(/img/close.svg);
+  background-repeat: no-repeat;
+  background-size: 11px 11px;
+  background-position: center;
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
